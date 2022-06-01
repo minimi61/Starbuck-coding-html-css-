@@ -205,13 +205,13 @@ header {
 
 @media screen and (max-width: 960px) {
     header {
-        height: 100px;
+        height: 80px;
     }
     .logo a {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         background-size: cover;
-        margin-top: -15px;
+        margin-top: -10px;
     }
     .header-container nav {
         display: none;
@@ -219,14 +219,14 @@ header {
     .media-header {
         display: inline-block;
         float: right;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-right: 0;
     }
     .media-header i {
-        padding: 17px;
+        padding: 10px;
         cursor: pointer;
     }
-    .fa-3x {
+    .fa-solid {
         color: #4e443f;
     }
 }
