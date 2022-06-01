@@ -272,10 +272,10 @@ header {
         margin-left: 10%;
     }
     .btn0 {
-        top: 950%;
+        top: 900%;
         left: 35vw;
-        width: 25vw;
-        height: 5vw;
-        font-size: 0.5rem;
+        width: 27vw;
+        height: 7vw;
+        font-size: 3vw;
     }
 }
