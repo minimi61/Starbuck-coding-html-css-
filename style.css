@@ -97,13 +97,19 @@ header {
 
 .yellow-img-text-group {
     max-width: 1120px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     position: relative;
 }
 .coffees {
     /* width: 70vmin; */
-    background-color: #4e443f;
+    /* background-color: #4e443f;  */
     display: block;
+    position: relative;
+    right:0;
+    width: 100%;
+    height: 100%;
 }
 .find-text {
     position: absolute;
@@ -130,8 +136,8 @@ header {
 }
 
 .rollin {
-    width: 50vw;
-    height: 50vh;
+    width: 468px;
+    height: 315px;
     object-fit: contain;
     position: absolute;
     top: 90px;
@@ -351,19 +357,13 @@ header {
     /* margin-left: 20px; */
 }
 
-@media screen and (min-width:1024px){
+/* @media screen and (min-width:1024px){
      .find-text img {
         display: block;
-        margin-left: 20%;
+        margin-left: 20%; */
         /* width: 30vmin; */
-    }
-
-    .btn0 {
-        /* top: 120%; */
-        left: 7vw;
-    }
-    .coffees {
-        width: 50vmin;
+    /* }z */
+        /* width: 50vmin;
     }
 
     .rollin { 
@@ -375,14 +375,14 @@ header {
         top: 14vw;
         left: 25vw;
         width: 32vw;
-    }
+    } */
 
-    .pomelo {
+    /* .pomelo {
         top: 18vh;
         left: 72vw;
         width: 20vw;
     } 
-}
+} */
 @media screen and (max-width:1024px){
     .find-text img {
         display: block;
