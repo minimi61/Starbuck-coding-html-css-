@@ -387,7 +387,7 @@ header {
     width: 320px;
     position: absolute;
     top: 100px;
-    left: 450px;
+    left: 30%;
 } 
 
 .sulawesh {
@@ -396,7 +396,7 @@ header {
     font-size: 30px;
     position: absolute;
     top: 180px;
-    left: 750px;
+    left: 50%;
 }
 .sulawesh span:first-child {
     color: #9894bd;
@@ -429,7 +429,7 @@ header {
 .btn1 {
     position: absolute;
     top: 400px;
-    left: 750px;
+    left: 50%;
     border: 3px solid #0B2A6D;
     /* animation: reverse-slide2 2s ease-out; */
 }
