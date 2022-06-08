@@ -252,7 +252,7 @@ header {
 .dark-green {
     background-color: #1E3932;
     width: 100%;
-    height: 340px;
+    height: 350px;
     color: white;
 }
 .dark-green-inner {
@@ -361,6 +361,80 @@ header {
     display: none;
 }
 
+
+/* SKY BLUE */
+
+.skyblue {
+    background-color: #A7DEF4;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+}
+.skyblue::before {
+    content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_bean_bg_left.png);
+    margin-top: -100px;
+}
+.skyblue::after {
+    content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_bean_bg_right.png);
+    margin-top: 50px;
+    margin-left: 700px;
+}
+.coffee-powder img {
+    width: 320px;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+} 
+
+.sulawesh {
+    width: 700px;
+    height: 100px;
+    font-size: 30px;
+    position: absolute;
+    top: 180px;
+    left: 750px;
+}
+.sulawesh span:first-child {
+    color: #9894bd;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.sulawesh span:nth-child(2) {
+    display: inline-block;
+    color: #3c55c5;
+    font-family:sans-serif;
+    font-weight: 800;
+    font-size: 43px;
+    margin-top: 8px;
+}
+.sulawesh div {
+    width: 600px;
+    color: #3541ab;
+    font-family:sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: 17px;
+}
+.btn-style {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    background: none;
+    border-radius: 7px;
+}
+.btn1 {
+    position: absolute;
+    top: 400px;
+    left: 750px;
+    border: 3px solid #0B2A6D;
+    /* animation: reverse-slide2 2s ease-out; */
+}
+
+
 @media screen and (min-width:1024px){
      .find-text img {
         display: block;
@@ -418,7 +492,7 @@ header {
 }
 @media screen and (max-width: 1000px) {
     .dark-green {
-        height: 580px;
+        height: 500px;
     }
     .grid-container {
         display: grid;
