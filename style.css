@@ -9,6 +9,11 @@ header {
     background-color: #f6f5ef;
     height: 155px; 
     border-top: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .header-container {
@@ -93,6 +98,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 600px;
+    margin-top: 155px;
 }
 
 .yellow-img-text-group {
