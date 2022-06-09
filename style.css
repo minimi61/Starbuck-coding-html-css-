@@ -332,8 +332,6 @@ header {
     border-top: 1px solid lightgray;
     display: flex;
     justify-content: space-between;
-    margin-left: -20px;
-    margin-right: 20px;
     font-size: 12px;
 }
 .list-3 p {
@@ -418,6 +416,9 @@ header {
     font-weight: 600;
     font-size: 21px;
     margin-top: 17px;
+}
+.sulawesh-div-br2 {
+    display: none;
 }
 .btn-style {
     width: 180px;
@@ -548,6 +549,8 @@ header {
         font-size: 16px;
     }
 
+    /* skyblue */
+
     .coffee-powder {
     width: 100px;     
     }
@@ -560,24 +563,13 @@ header {
         width: 450px;
     }
     .sulawesh span:first-child {
-        color: #9894bd;
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: 600;
         font-size: 22px;
     }
     .sulawesh span:nth-child(2) {
-        display: inline-block;
-        color: #3c55c5;
-        font-family:sans-serif;
-        font-weight: 800;
         font-size: 30px;
-        /* margin-top: 8px; */
     }
     .sulawesh div {
         width: 460px;
-        color: #3541ab;
-        font-family:sans-serif;
-        font-weight: 600;
         font-size: 20px;
         margin-top: 17px;
     }
@@ -652,6 +644,35 @@ header {
         left: 560px;
         width: 170px;
     }
+
+    /* skyblue */
+
+    .coffee-powder {
+        width: 100px;     
+    }
+    .coffee-powder img {
+        width: 250px;
+        margin-top: 50px;
+        margin-left: -30px;
+    }
+    .sulawesh {
+        width: 450px;
+    }
+    .sulawesh span:first-child {
+        font-size: 22px;
+    }
+    .sulawesh span:nth-child(2) {
+        font-size: 30px;
+    }
+    .sulawesh div {
+        /* width: 400px; */
+        font-size: 18px;
+        margin-top: 17px;
+    }
+    .btn1 {
+        margin-top: -30px;
+    }
+    
 }
 @media screen and (max-width: 660px) {
     .starbuck-notice-container {
@@ -788,5 +809,38 @@ header {
     }
     .list-3-br {
         display: inline;
+    }
+
+    .skyblue {
+        height:1000px;
+    }
+    .coffee-powder img {
+        width: 350px;
+        margin-left: 30px;
+    }
+    .sulawesh {
+        margin-left: -150px;
+        margin-top: 500px;
+    }
+    .sulawesh span:first-child {
+        margin-left: 50px;
+        font-size: 27px;
+    }
+    .sulawesh span:nth-child(2) {
+        font-size: 40px;
+    }
+    .sulawesh div {
+        margin-left: -50px;
+        text-align: center;
+    }
+    .sulawesh-div-br {
+        display: none;
+    }
+    .sulawesh-div-br2 {
+        display: inline;
+    }
+    .btn1 {
+        margin-top: 500px;
+        margin-left: -80px;
     }
 }
