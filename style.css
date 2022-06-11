@@ -470,6 +470,275 @@ header {
     color: #D4BC58;
 }
 
+/* Favorite */
+
+.favorite {
+    background-image: linear-gradient(to bottom, rgba(37, 35, 35, 0.104), rgb(0, 0, 0) 100%);
+    /* 배경사이즈 맞추기  */
+    width: 100%;
+    height: 850px;
+    position: relative;
+    overflow: hidden;
+    /* 마진 병합으로 인해 over-flow를 줌 */
+}
+.favorite::before {
+    content: "";
+    background: fixed url('https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0.89;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.favorite_text {
+    /* 왜 여기서 margin-top을 주면 부모 요소가 같이 되지? */
+    margin-left: 200px;
+    margin-top: 180px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 300px;
+    font-size: 80px;
+    color: white;
+    text-align: end;
+    position: relative;
+
+}
+.favorite_text span:first-child {
+    text-align: end;
+    letter-spacing: 5px;
+}
+.favorite_text span:nth-child(2) {
+    display: block;
+    margin-top: -15px;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+.favorite_text span:last-child {
+    display: block;
+    margin-top: -10px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.favorite-detail-text {
+    position: relative;
+    width: 550px;
+    color: white;
+    margin-left: -50px;
+    margin-top: 30px;   
+}
+.favorite-detail-text1 {
+    font-size: 23px;
+    text-align: right;
+    line-height: 27px;
+}
+.favorite-detail-text1 span{
+    font-weight: 600;
+    font-size: 27px;
+}
+.favorite-detail-text2 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: right;
+}
+.favorite-detail-text button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+.btn3 {
+    margin-left: 400px;
+    margin-top: 30px;
+    border: 3px solid white;
+    color: white;
+}
+.yellow-pics {
+    width: 600px;
+    height: 400px;
+    /* position:absolte에서는 width값이 사라지기 때문에 width:100% 주기! */
+    position: absolute;
+    top: 200px;
+    left: 580px;
+}
+
+/* Reserve(White) */
+
+.reserve {
+    height: 400px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png) no-repeat;
+    overflow: hidden;   
+    position: relative;
+}
+.reserve-group {
+    display: flex;
+}
+.reserve-text {
+    width: 600px;
+    height: 120px;
+    margin: auto;
+
+}
+.reserve-pics {
+    width: 300px;
+    height: 360px;
+    margin-right: 20px;
+    overflow: hidden;   
+}
+.btn4 {
+    border: 3px solid black;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    position: absolute;
+    top: 260px;
+    left: 300px;
+}
+.responsive-reserve {
+    display: none;
+}
+/* Store */
+
+.store {
+    background: url(https://www.starbucks.co.kr/common/img/main/store_bg.jpg);
+    height: 500px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.store-pics img:first-child {
+    position: absolute;
+    top:400px;
+    right: 0;
+}
+.store-pics img:nth-child(2) {
+    position: absolute;
+    top:0;
+    left: 100px;
+}
+.store-pics img:nth-child(3) {
+    z-index: 1;
+    position: absolute;
+    top:160px;
+    left: 300px;
+}
+.store-text {
+    width: 500px;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.store-text1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #633c06;
+}
+.store-text1 span:nth-child(3) {
+    font-size: 18px;
+    font-weight: 600;
+}
+.store-text2 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #462b05;
+
+}
+.store-text2 span {
+    font-size: 16px;
+    font-weight: 900;
+}
+.btn5 {
+    margin-top: 30px;
+    width: 130px;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.responsive-store {
+    display: none;       
+}
+
+/* Footer */
+
+footer {
+    background: #2C2A29;
+    color: white;
+    height: 900px;
+}
+/* 가운데 정렬이 안됨 ...! */
+.info-company {
+    max-width: 700px;
+    height: 600px;   
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+footer> nav> ul {
+    padding: 5rem;
+    font-size: 14px;
+}
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+}
+footer nav ul li {
+    list-style: none;
+}
+.personal-info {
+    border-top: black 2px solid;
+    justify-content: center;
+    text-align: center;
+}
+.personal-ul1 li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    font-weight: 500;
+    font-size: 13px;
+    border-left: 1px solid gray;
+}
+.personal-ul1 {
+    padding: 1em;
+    
+}
+.personal-ul1 li:first-child {
+    color: #00b050 !important;
+    font-weight: bold;
+    border: none;
+}
+
+.btn6 {
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    width: 130px;
+    height: 33px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.personal-ul2 {
+    padding: 2em;
+    margin-top: -10px;
+}
+.personal-ul2 li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.3em; 
+    padding-left: 0.3em;
+    font-weight: 500;
+    font-size: 12px;
+}
+.last-part {
+    margin-top: -20px;
+    text-align: center;
+}
 @media screen and (min-width:1024px){
      .find-text img {
         display: block;
@@ -644,6 +913,8 @@ header {
 
 }
 @media screen and (max-width: 930px){
+    /* Indonesia */
+
     .indonesia-img {
         display: none;
     }
@@ -662,6 +933,114 @@ header {
         border: 3px solid #f0efee;
         color: #e7e6e3;
     }
+
+    /* Favorite */
+
+    .favorite::before {
+        content: "";
+        background: fixed url('https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg') no-repeat;
+        background-size: cover;
+        background-position: right;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .favorite_text {
+        display: none;
+    }
+    .favorite-detail-text1 {
+        display: none;
+    }
+    .favorite-detail-text2 {
+        display: none;
+    }
+    .yellow-pics {
+         margin-left: -350px;
+    }
+    .btn3 {
+        margin-top: 700px;
+    }
+
+    /* Reserve */
+
+    .reserve {
+        display: none;
+        position: static;
+
+    }
+    .responsive-reserve {
+        display: block;
+        position: relative;
+    }
+    .responsive-reserve img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .btn4 {
+        top: 1450px;
+        margin: 0 auto 0 50px;
+    }
+
+    /* store */
+
+    .original-store {
+        display: none;
+    }
+    .responsive-store {
+        display: block;
+    }
+  
+    .store {
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+    .store-pics img:first-child {
+        position: absolute;
+        top:720px;
+        right: 1%;
+        width: 200px;
+    }
+    .store-pics img:nth-child(2) {
+        position: absolute;
+        top:0;
+        left: 20%;
+    }
+    .store-pics img:nth-child(3) {
+        position: absolute;
+        top:200px;
+        left: 50%;
+    }
+    .responsive-store-font {
+        font-size: 29px;
+        font-weight: 900;
+        color: #472a04;
+    }
+    .store-text {
+        margin: 450px auto 0 auto;
+        text-align: center;    
+        z-index: 2;
+    }
+    .store-text1 {
+        font-size: 25px;
+        font-weight: 800;
+        color: #462b05;
+    }
+
+    .store-text2 {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #462b05;
+    
+    }
+
 }
 @media screen and (max-width: 900px){
     .rollin {
@@ -676,27 +1055,59 @@ header {
     }
     .pomelo {
         top: 90px;
+        left: 610px;
         width: 180px;
     }
+    
+    /* SKY BLUE */
+
+
+    .coffee-powder img {
+        width: 200px;
+        position: absolute;
+        top: 150px;
+        left: 30%;
+    } 
+
+    .sulawesh span:first-child {
+        font-size: 20px;
+    }
+    .sulawesh span:nth-child(2) {
+        font-size: 26px;
+    }
+    .sulawesh div {
+        font-size: 15px;
+        margin-top: 13px;
+    }
+    .coffee-pow-message button{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        background: none;
+        border-radius: 7px;
+        margin-top: -50px;
+    }
+
+
 
 }
 @media screen and (max-width: 800px){
     .btn0 {
-        margin-left: 25%;
+        margin-left: 22%;
     }
     .rollin {
         top: 100px;
-        left: 230px;
+        left: 280px;
         width: 300px;
     }
     .punch-img {
         top: 160px;
-        left: 120px;
+        left: 170px;
         width: 270px;
     }
     .pomelo {
         top: 140px;
-        left: 500px;
+        left: 550px;
         width: 150px;
     }
 
@@ -721,34 +1132,26 @@ header {
         font-size: 16px;
     }
 
-    /* skyblue */
-
-    .coffee-powder {
-        width: 100px;     
+}
+@media screen and (max-width: 700px){
+    .btn0 {
+        margin-left: 25%;
     }
-    .coffee-powder img {
-        width: 250px;
-        margin-top: 50px;
-        margin-left: -30px;
+    .rollin {
+        top: 100px;
+        left: 220px;
+        width: 300px;
     }
-    .sulawesh {
-        width: 450px;
+    .punch-img {
+        top: 160px;
+        left: 120px;
+        width: 270px;
     }
-    .sulawesh span:first-child {
-        font-size: 22px;
+    .pomelo {
+        top: 140px;
+        left: 470px;
+        width: 150px;
     }
-    .sulawesh span:nth-child(2) {
-        font-size: 30px;
-    }
-    .sulawesh div {
-        /* width: 400px; */
-        font-size: 18px;
-        margin-top: 17px;
-    }
-    .btn1 {
-        margin-top: -30px;
-    }
-    
 }
 @media screen and (max-width: 660px) {
     .starbuck-notice-container {
